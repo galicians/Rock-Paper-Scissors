@@ -1,0 +1,4 @@
+1. create gemfile
+2. run bundle
+3. cucumber-sinatra init --app  game lib/game.rb
+4. First scenario of our first feature (features/starting_a_game.feature)
