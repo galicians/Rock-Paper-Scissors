@@ -1,8 +1,8 @@
 require 'sinatra/base'
 
-class game < Sinatra::Base
+class Game < Sinatra::Base
   get '/' do
-    'Hello game!'
+    'Hello Game!'
   end
 
   # start the server if ruby file executed directly

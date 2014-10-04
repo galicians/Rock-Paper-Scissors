@@ -1,2 +1,0 @@
-
-	Feature: Starting a game
