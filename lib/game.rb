@@ -18,15 +18,22 @@ class Game < Sinatra::Base
   end
 
   get '/registration' do
-
+  	params
   	erb :sign_in
   end
 
-  post '/playing_area' do
+  post '/opponent' do
+  	session[:player_one] = params[:name]
   	@name = params[:name]
-  	erb :playing_area
+  	erb :opponent
 	end
 
+	post '/waiting_area' do
+		puts params.inspect
+		@opponent = params[:opponent]
+		return erb :playing_area if @opponent == "algorithm"
+		erb :waiting_area
+	end
 
 
 
