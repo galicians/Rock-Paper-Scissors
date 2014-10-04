@@ -10,6 +10,10 @@ Test environments such as Capybara
 Application frameworks such as Sinatra
 gems such as cucumber-sinatra.
 Using Cucumber exclusively to emulate a keyboard and a mouse is possible, but it’s not what it was designed for.
+ set :views, Proc.new { File.join(root, "..","views") }
+ enable :sessions
+
+
 
 Feature: objective
 In order
@@ -39,9 +43,6 @@ Feature: Joining the game
 	Given there is a player waiting
 	When I register to Battleships
 	Then I should see the button  to "Place my ships"
-
-
-
 
 
 
