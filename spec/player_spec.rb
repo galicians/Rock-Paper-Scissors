@@ -20,4 +20,5 @@ describe Player do
 		expect{ player.weapon('Lock') }.to raise_error "Not an authorized weapon"
 	end
 
+
 end

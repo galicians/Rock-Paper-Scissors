@@ -1,6 +1,7 @@
 frecuent errors:
 if statements , = instead of ==
 missing ( in rspec after an expect, forgueting the def, do, and the {} in an exception
+expecting a symbol from rules.keys, but gives back an array
 
 
 pending: sintax to style readme files in github
