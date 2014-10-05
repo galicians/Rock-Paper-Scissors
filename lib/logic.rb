@@ -4,7 +4,7 @@ class Logic
 	attr_reader :rounds
 	# attr_accessor :rounds
 
-	gestures = ['Rock','Paper','Scissors','Lizzard','Spock']
+	WEAPONS = ["Lizzard", "Paper", "Rock", "Scissors", "Spock"]
 
 	def initialize(rounds = 3)
 		@rounds = rounds
@@ -18,7 +18,11 @@ class Logic
 		!player2.nil?
 	end
 
+	def pairing
+		[player1.weapon , player2.weapon].sort!
+	end
 
+	#def beats
 
 	def winner?
 		return true if player_one.score == rounds
@@ -28,6 +32,19 @@ class Logic
 
 end
 
+
+# rules = { 'Rock vs Scissors' => 'Rock crushes Scissors',
+# 					'Scissors vs Rock' => 'Rock crushes Scissors',
+# 					=> 'Paper covers Rock',
+# 					=> 'Paper covers Rock',
+# 					=> 'Rock crushes Lizard',
+# 					=> 'Scissors cut Paper',
+# 					=> 'Scissors cut Paper',
+# 					=> 'Scissors cut Paper',
+# 					=> 'Scissors cut Paper',
+# 					=> 'Scissors cut Paper',
+# 					=> 'Scissors cut Paper',
+# 					=> 'Scissors cut Paper',
 
 
 

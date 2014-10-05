@@ -1,15 +1,15 @@
 class Player
 
-	attr_accessor :points, :gestures
+	attr_accessor :points, :weapons
 
-	def initialize(gestures = ['Rock','Paper','Scissors','Lizzard','Spock'])
-		@gestures = gestures
+	def initialize(weapons = ["Lizzard", "Paper", "Rock", "Scissors", "Spock"])
+		@weapons = weapons
 		@points = 0
 	end
 
-	def gesture(choice)
-		return choice if gestures.include? choice.downcase.capitalize!
-		raise "Not a gesture"
+	def weapon(choice)
+		return choice if weapons.include? choice.downcase.capitalize!
+		raise "Not an authorized weapon"
 	end
 
 

@@ -5,7 +5,7 @@ describe Player do
 	let(:player) { Player.new }
 	
 	it 'should be initialized with the gestures' do
-		expect(player.gestures.size).to eq 5
+		expect(player.weapons.size).to eq 5
 	end
 
 	it 'should be initialized with 0 points' do
@@ -13,11 +13,11 @@ describe Player do
 	end
 
 	it 'should be able to accept a gesture' do
-		expect(player.gesture('Rock')).to eq 'Rock'
+		expect(player.weapon('Rock')).to eq 'Rock'
 	end
 
 	it 'should not accept something is not a gesture' do
-		expect{ player.gesture('Lock') }.to raise_error "Not a gesture"
+		expect{ player.weapon('Lock') }.to raise_error "Not an authorized weapon"
 	end
 
 end
