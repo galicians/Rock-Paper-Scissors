@@ -1,5 +1,6 @@
 frecuent errors:
 if statements , = instead of ==
+missing ( in rspec after an expect, forgueting the def, do, and the {} in an exception
 
 
 pending: sintax to style readme files in github

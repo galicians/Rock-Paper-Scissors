@@ -10,7 +10,6 @@ describe Logic do
 	it "can have players added" do
 		logic.add_player(player)
 		expect(logic.player1).to eq player
-		
 	end
 
 	it "knows when two players have been added" do
@@ -35,12 +34,4 @@ describe Logic do
 	end
 
 
-	player1.gesture = 'rock'
-	player2.gesture = 'paper'
-
-	turn(player.gesture
-
 end
-class Player
-	gestures
-	points

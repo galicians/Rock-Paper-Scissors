@@ -32,13 +32,6 @@ end
 
 
 
-# class Player
-# 	attr_ccessor :score
-
-# end
-
-
-
 
 # Scissors cut Paper
 # Paper covers Rock
@@ -53,14 +46,4 @@ end
 
 # 	gesture = ['Rock','Paper','Scissors','Lizzard','Spock']
 
-# 	rules = {'Rock vs Scissors' => ''}
-# end
-
-# rock 
-
-# Scissors
-
-# logic 
-# rock crushes Scissors, player 1, player 2, 
-
-# returns rock crushes Scissors, updates scores
+# 	rules = {'Rock' vs 'Scissors' => ''}
